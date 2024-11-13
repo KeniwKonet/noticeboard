@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-container, .notice-form-container, .approval-container {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #f3f3f3;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 800px;
+  }
+  
+  .category {
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  
+  .medical { background: #ffe6e6; }
+  .anonymous { background: #e6e6ff; }
+  .other { background: #e6ffe6; }
+  
+  .approval-container .notice-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  button.approve-btn { color: #fff; background: green; }
+  button.reject-btn { color: #fff; background: red; }
+  button.edit-btn { color: #fff; background: blue; }
+  

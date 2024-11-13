@@ -1,0 +1,48 @@
+<!-- homepage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <input type="text" id="search-bar" placeholder="Search notices..." oninput="handleSearch(event)">
+  </header>
+
+  <main class="category-container">
+    <div class="category medical">
+      <h3>Emergency Notices</h3>
+      <p>Immediate posting enabled.</p>
+      <button onclick="openAddNoticeForm('Medical Emergency')">+ Add Notice</button>
+    </div>
+
+    <div class="category anonymous">
+      <h3>Anonymous Messages</h3>
+      <p>Immediate posting enabled.</p>
+      <button onclick="openAddNoticeForm('Anonymous')">+ Add Notice</button>
+    </div>
+
+    <div class="category other">
+      <h3>Academic Notices</h3>
+      <p>Requires admin approval</p>
+      <button onclick="openAddNoticeForm('Academic')">+ Add Notice</button>
+    </div>
+
+    <div class="category other">
+      <h3>Social Notices</h3>
+      <p>Requires admin approval</p>
+      <button onclick="openAddNoticeForm('Social')">+ Add Notice</button>
+    </div>
+
+    <div class="category other">
+      <h3>Event Notices</h3>
+      <p>Requires admin approval</p>
+      <button onclick="openAddNoticeForm('Event')">+ Add Notice</button>
+    </div>
+  </main>
+</body>
+</html>

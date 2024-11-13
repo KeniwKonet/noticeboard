@@ -1,0 +1,35 @@
+<!-- add_notice.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Notice</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="notice-form-container">
+    <h2>Add New Notice</h2>
+    <form id="notice-form" onsubmit="submitNotice(event)">
+      <input type="text" placeholder="Notice Title" id="title" required>
+
+      <label for="category">Category</label>
+      <select id="category" onchange="checkApprovalRequirement()" required>
+        <option value="Medical Emergency">Emergency</option>
+        <option value="Anonymous">Anonymous</option>
+        <option value="Academic">Academic</option>
+        <option value="Social">Social</option>
+        <option value="Event">Event</option>
+      </select>
+
+      <textarea placeholder="Write your notice here..." id="content" required></textarea>
+
+      <label for="attachment">Attach Media (optional)</label>
+      <input type="file" id="attachment" accept=".jpg, .jpeg, .png, .pdf">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
